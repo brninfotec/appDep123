@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+  border: 5px solid yellowgreen;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+form label{
+  display: inline-block;
+  width: 100px;
+  font-size: larger;
+ 
+}
+form div{
+  margin: 20px;
+}
+button{
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin: 2px;
+  background-color: cornflowerblue;
+}
+
+
+body{
+  background: url("https://media.istockphoto.com/id/1305990690/photo/an-organised-workspace-leads-to-more-productivity.jpg?s=612x612&w=0&k=20&c=bZhhyF1eHKZE4yUC6yJ1jJyLftC2oHrr8QPiKwj7zm4=");
+  background-size: cover;
+}
+
+h1{
+ 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwBihonPCMJzIepb2_MuB8fPb2D4AG7NTpQ&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.profilePicPreview{
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+a{
+  font-size: 2rem;
+  display: block;
+  text-decoration: none;
+}
+
+.link{
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin: 2px;
+ 
+}
