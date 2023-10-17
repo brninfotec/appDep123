@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
+const path = require("node:path");
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -35,7 +36,8 @@ let connectToMDB = async()=>{
 let app = express();
 app.use(cors());
 
-app.use('/uploads', express.static('uploads'))
+app.use('/uploads', express.static('uploads'));
+app.use(express.static(path.join(__dirname,"./client/build")));
 
 
 let userSchema = new mongoose.Schema({

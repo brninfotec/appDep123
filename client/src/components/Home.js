@@ -15,7 +15,7 @@ let navigate = useNavigate();
       method:"DELETE",
       body:dataToSend
      };
-     let JSONData = await fetch("http://localhost:1234/deleteUser",reqOptions);
+     let JSONData = await fetch("/deleteUser",reqOptions);
 
      let JSOData = await JSONData.json();
      if(JSOData.status == "success"){
@@ -43,7 +43,7 @@ let navigate = useNavigate();
         <h1>Welcome {loc.state.data.firstName}
         {loc.state.data.lastName}</h1>
 
-        <img src={`http://localhost:1234/${loc.state.data.profilePic}`}></img>
+        <img src={`/${loc.state.data.profilePic}`}></img>
     </div>
   )
 }

@@ -57,7 +57,7 @@ function Login() {
               dataToSend.append("email",emailinputRef.current.value);
               dataToSend.append("password",passwordinputRef.current.value);
 
-            let response = await ("http://localhost:1234/validateLogin",dataToSend);
+            let response = await ("/validateLogin",dataToSend);
 
             console.log(response);
       
@@ -110,7 +110,7 @@ function Login() {
 
           <button type="button"
             onClick={()=>{
-              validateCredentials();
+              validateCredentialsThruAxios();
             }}>(Login)</button>
 
 

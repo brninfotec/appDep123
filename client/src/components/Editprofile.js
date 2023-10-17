@@ -18,7 +18,7 @@ function Editprofile() {
         firstNameinputRef.current.value = loc.state.firstName;
         lastNameinputRef.current.value = loc.state.lastName;
         passwordinputRef.current.value = loc.state.password;
-        // setProfilePic(`http://localhost:1234/${loc.state.profilePic}`);
+       
      })
   
 
@@ -40,7 +40,7 @@ function Editprofile() {
             body:dataToSend,
         };
 
-          let JSONData = await fetch("http://localhost:1234/updateDetails",reqOptions);
+          let JSONData = await fetch("/updateDetails",reqOptions);
           let JSOData = await JSONData.json();
           console.log(JSOData);
          }
